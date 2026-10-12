@@ -3,4 +3,7 @@ services:
     build: .
     ports:
       - "8000:8000"
+    environment:
+      MAX_HTML_CHARS: "200000"
+      LOG_LEVEL: INFO
     restart: unless-stopped
